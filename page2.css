@@ -1,0 +1,102 @@
+.page-2{
+  background-image: url(images/piano.jpg);
+  background-size: cover;
+  height: 880px;
+  font-family: helvetica;
+}
+
+#page-2-header{
+  display: grid;
+  grid-template-columns: 500px;
+  text-align: center;
+  margin-top: 0;
+  color: white;
+
+  font-weight: normal;
+  letter-spacing: 2px;
+  padding-top: 2%;
+  font-size: 40px;
+
+}
+
+.page-2-container{
+  display: grid;
+  grid-template-columns: 500px;
+  text-align: center;
+  padding-top: 2%;
+}
+
+#container-header{
+  font-weight: lighter;
+  color: white;
+  font-size: 30px;
+}
+
+#page-2-text{
+  color: lightgrey;
+  line-height: 2;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+#page-2-lowertext{
+  padding-left: 10px;
+  font-weight: normal;
+  color: white;
+  font-size: 25px;
+}
+
+.page-2-button{
+
+  padding-top: 10%;
+}
+
+#pg2-button{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  border: 2px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+#pg2-button:hover{
+  transition: 0.2s;
+  border: 2px solid lightgrey;
+}
+
+/*---------- MEDIA ---------*/
+
+@media only screen and (max-width:710px) {
+  #page-2-header{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-top: 4%;
+    font-size: 40px;
+}
+
+.page-2-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding-top: 2%;
+}
+}
+
+@media only screen and (max-width:680px) {
+  #page-2-header{
+    padding-top: 4%;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  #page-2-header{
+    padding-top: 8%;
+  }
+}

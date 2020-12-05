@@ -1,0 +1,87 @@
+body{
+margin: 0;
+}
+
+.first{
+  padding-bottom: 0px;
+}
+
+.page_1{
+  height: 900px;
+  background-image: url(images/x1.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.1fr 0.1fr 0.2fr;
+
+}
+
+#txt_music{
+  font-family: helvetica;
+  font-size: 30px;
+  color: white;
+  padding-left: 10px;
+}
+
+#txt_about{
+  font-family: helvetica;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.txt_main_1{
+
+}
+
+.lower_part{
+  text-align: center;
+
+}
+
+#txt_page_1{
+  font-family: helvetica;
+  font-size: 60px;
+  color: white;
+  margin-top: 170px;
+}
+
+.button_1{
+  /*margin-left: 81vh;*/
+}
+
+#listen_now{
+  font-family: helvetica;
+  font-size: 30px;
+  color: white;
+  border-radius: 10px;
+
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+#listen_now:hover{
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+/*---------- MEDIA ---------*/
+
+@media only screen and (max-width:680px) {
+  #txt_page_1{
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width:550px) {
+  #txt_page_1{
+    font-size: 40px;
+  }
+}
