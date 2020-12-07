@@ -1,0 +1,208 @@
+body{
+  margin: 0;
+  font-family: helvetica;
+}
+
+.first{
+  padding-bottom: 0px;
+}
+.page-lavigne{
+  height: 800px;
+  background-image: url(images/avril3.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.1fr 0.1fr 0.2fr;
+}
+
+#txt_music{
+  font-family: helvetica;
+  font-size: 30px;
+  color: white;
+  padding-left: 10px;
+}
+
+#txt_about{
+  font-family: helvetica;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+#header-avril{
+color: white;
+text-align: right;
+padding-right: 6%;
+padding-top: 3%;
+font-weight: lighter;
+letter-spacing: 2px;
+font-size: 46px;
+}
+
+.width-album{
+  width: 140px;
+  border-radius: 10px;
+}
+
+.width-album:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+.lavigne-album{
+  display: grid;
+  grid-template-columns: 7fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-rows: auto;
+  padding-right: 11vh;
+  text-align: right;
+}
+
+.link-avril{
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: 2px solid #565a53;
+  background-color: #303435;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.link-avril:hover{
+  transition: 0.2s;
+    background-color: #3d4344;
+}
+
+.lavigne-position{
+  padding-top: 50px;
+  padding-right: 22vh;
+text-align: right;
+}
+
+.lavigne-album-small{
+  display: none;
+}
+
+.lavigne-position-small{
+  display: none;
+}
+
+#header-small-lavigne{
+  display: none;
+}
+
+
+@media only screen and (max-width:1220px) {
+#header-avril{
+  text-align: left;
+  padding-left: 4vh;
+}
+
+.lavigne-position{
+  display: none;
+}
+
+.lavigne-album{
+  display: none;
+}
+
+.lavigne-album-small{
+  padding-top: 2vh;
+  display: block;
+  padding-left: 0.5%;
+
+}
+.width-album-small{
+  width: 130px;
+  margin-left: 2.6vh;
+  border-radius: 10px;
+}
+
+.lavigne-position-small{
+  display: block;
+  padding-top: 8vh;
+  padding-left: 13vh;
+}
+
+.link-avril{
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: 2px solid #565a53;
+  background-color: #13101d;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.link-avril:hover{
+  transition: 0.2s;
+    background-color: #24272c;
+}
+
+.width-album-small:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+}
+
+@media only screen and (max-width:720px) {
+#header-avril{
+  display: none;
+}
+
+.lavigne-album-small{
+  display: none;
+}
+
+.lavigne-position-small{
+  display: none;
+}
+
+.page-lavigne{
+  height: 1000px;
+  background-image: url(images/iphone_img.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#txt_music{
+  font-family: helvetica;
+  font-size: 30px;
+  color: black;
+  padding-left: 10px;
+}
+
+#txt_about{
+  font-family: helvetica;
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+
+.navbar{
+  grid-template-rows: 10vh;
+}
+
+#header-small-lavigne{
+  display: block;
+  text-align: center;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 46px;
+}
+
+}
