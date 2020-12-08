@@ -296,7 +296,7 @@ text-align: right;
 }
 @media only screen and (max-width:550px) {
   #image-lavigne-small{
-    width: 80vw;
+    width: 90vw;
   }
   .page-lavigne-small{
     height: 1800px;
