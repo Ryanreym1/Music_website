@@ -223,7 +223,7 @@ text-align: right;
 
 /*---small--*/
 .lavigne-position-small-p{
-  padding-top: 20%;
+  padding-top: 25%;
   text-align: center;
 }
 
@@ -299,8 +299,22 @@ text-align: right;
     width: 90vw;
   }
   .page-lavigne-small{
-    height: 1800px;
+    height: 1870px;
 
   }
 
+}
+
+@media only screen and (max-width:500px) {
+  .page-lavigne-small{
+    height: 1900px;
+
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .page-lavigne-small{
+    height: 1500px;
+
+  }
 }
