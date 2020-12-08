@@ -8,6 +8,15 @@ body{
   background-repeat: no-repeat;
 }
 
+.album-ariana:hover{
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+#music-link{
+  text-decoration: none;
+}
+
 
 #header-ariana{
   font-size: 50px;
@@ -48,9 +57,11 @@ body{
   display: none;
 }
 
+
+
 @media only screen and (max-width:800px) {
   #header-ariana{
-    color: red;
+
   }
 
   .ariana{
@@ -114,6 +125,7 @@ body{
     margin-top: 10vh;
     text-align: center;
   }
+
 }
 
 @media only screen and (max-width:750px) {
