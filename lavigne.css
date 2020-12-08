@@ -299,7 +299,7 @@ text-align: right;
     width: 90vw;
   }
   .page-lavigne-small{
-    height: 1870px;
+    height: 2000px;
 
   }
 
@@ -307,14 +307,18 @@ text-align: right;
 
 @media only screen and (max-width:500px) {
   .page-lavigne-small{
-    height: 1900px;
-
+height: 1800px;
   }
 }
 
 @media only screen and (max-width:450px) {
   .page-lavigne-small{
-    height: 1500px;
+
 
   }
+
+  @media only screen and (max-width:350px) {
+    .page-lavigne-small{
+
+    }
 }
