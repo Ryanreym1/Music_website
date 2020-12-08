@@ -300,9 +300,9 @@ letter-spacing: 1px;
   .img-artist{
     display: grid;
     grid-template-columns: 100vw;
-    grid-gap: 2%;
+    grid-gap: 0%;
     padding-top: 4%;
-    grid-template-rows: 80vh;
+    grid-template-rows: 610px;
     text-align: center;
   }
 
