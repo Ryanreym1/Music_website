@@ -258,7 +258,7 @@ text-align: right;
 }
 #image-lavigne-small{
   transition: 0.5s;
-  width: 70vw;
+  width: 80vw;
    margin: 0 auto;
   border: 1px;
   border-radius: 10px;
@@ -296,10 +296,10 @@ text-align: right;
 }
 @media only screen and (max-width:550px) {
   #image-lavigne-small{
-    width: 70vw;
+    width: 80vw;
   }
   .page-lavigne-small{
-    height: 1700px;
+    height: 1800px;
 
   }
 
