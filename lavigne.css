@@ -7,7 +7,7 @@ body{
   padding-bottom: 0px;
 }
 .page-lavigne{
-  height: 800px;
+  height: 850px;
   background-image: url(images/avril3.jpg);
 
   background-size: cover;
@@ -99,6 +99,18 @@ text-align: right;
   display: none;
 }
 
+.header-small{
+  display: none;
+}
+
+.page-lavigne-small{
+  display: none;
+}
+
+
+
+
+/*------- MEDIA -------*/
 
 @media only screen and (max-width:1220px) {
 #header-avril{
@@ -157,6 +169,12 @@ text-align: right;
 }
 
 @media only screen and (max-width:720px) {
+
+.page-lavigne{
+  display: none;
+}
+
+
 #header-avril{
   display: none;
 }
@@ -169,25 +187,19 @@ text-align: right;
   display: none;
 }
 
-.page-lavigne{
-  height: 1000px;
-  background-image: url(images/iphone_img.jpg);
 
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 #txt_music{
   font-family: helvetica;
   font-size: 30px;
-  color: black;
+  color: white;
   padding-left: 10px;
 }
 
 #txt_about{
   font-family: helvetica;
   font-size: 18px;
-  color: black;
+  color: white;
   text-decoration: none;
   margin-top: 40px;
   margin-right: 20px;
@@ -197,12 +209,50 @@ text-align: right;
   grid-template-rows: 10vh;
 }
 
-#header-small-lavigne{
+.header-small{
+
+  padding-top: -10vh;
   display: block;
-  text-align: center;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  font-size: 46px;
 }
 
+
+
+.navbar{
+
+
+
+}
+
+/*---small--*/
+
+.page-lavigne-small{
+  height: 900px;
+  display: block;
+  background-image: url(images/try1.jpg);
+  background-size: cover;
+}
+
+#header-lavigne-small{
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 2%;
+  font-size: 40px;
+  padding-bottom: 0px;
+}
+
+.lavigne-image-align{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  padding-top: 5%;
+
+}
+#image-lavigne-small{
+  transition: 2s;
+  width: 400px;
+   margin: 0 auto;
+  border: 1px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
 }
