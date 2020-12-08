@@ -1,0 +1,149 @@
+body{
+  font-family: helvetica;
+}
+.ariana{
+  height: 850px;
+  background-image: url(images/desktop-ariana.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+#header-ariana{
+  font-size: 50px;
+  color: white;
+  font-weight: lighter;
+  padding-left: 10vh;
+}
+
+.main-ariana{
+  padding-left: 8vh;
+}
+
+.album-ariana{
+  margin-top: 5vh;
+  width: 150px;
+  margin-left: 10px;
+  border: 1px;
+  border-radius: 10px;
+}
+
+.button-ariana{
+    margin-top: 9vh;
+    margin-left: 19vh;
+}
+
+#btn-ariana{
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 25px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.ariana-small{
+  display: none;
+}
+
+@media only screen and (max-width:800px) {
+  #header-ariana{
+    color: red;
+  }
+
+  .ariana{
+    display: none;
+  }
+
+  .ariana-small{
+    height: 2545px;
+    display: block;
+    background-image: url(images/try1.jpg);
+
+  }
+
+.ariana-align{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  padding-top: 5%;
+
+
+}
+  #ariana-front-img{
+    width: 90vw;
+    margin: 0 auto;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+  }
+
+  #header-arian-small{
+    font-size: 45px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+  }
+
+  .ariana-front-album{
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+  }
+
+  .albums-ariana{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 0%;
+  }
+
+  #ariana-records{
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    padding-top: 10vh;
+  }
+
+  .button-ariana-small{
+    margin-top: 10vh;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width:750px) {
+  .ariana-small{
+    height: 2430px;
+    display: block;
+    background-image: url(images/try1.jpg);
+  }
+}
+
+@media only screen and (max-width:700px) {
+  .ariana-small{
+    height: 2390px;
+    display: block;
+    background-image: url(images/try1.jpg);
+  }
+
+  @media only screen and (max-width:650px) {
+    .ariana-small{
+      height: 2250px;
+      display: block;
+      background-image: url(images/try1.jpg);
+    }
+}
+
+
+  @media only screen and (max-width:550px) {
+    .ariana-small{
+      height: 1950px;
+      display: block;
+      background-image: url(images/try1.jpg);
+    }
+}
