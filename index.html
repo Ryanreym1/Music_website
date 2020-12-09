@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="page2.css">
     <link rel="stylesheet" href="page3.css">
+    <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title></title>
   </head>
@@ -58,7 +59,7 @@ Music is your description of you, never change that.
 
 </div>
 
-    <div class="page-3">
+    <div id="footer-display" class="page-3">
       <!--
         <h1 id="page-3-header">Most popular</h1>
         <div class="page-3-artistcontainer">
@@ -113,17 +114,17 @@ Music is your description of you, never change that.
 
         </div>
       -->
-        <div class="more-container">
+        <div id="testen" class="more-container">
           <!-- The form -->
 <form class="example" action="action_page.php">
-  <input type="text" placeholder="Search Artist..." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
+  <input id="artistInp" type="text" placeholder="Search Artist..." name="search">
+  <button type="submit" onclick="searchArtist()" ><i class="fa fa-search"></i></button>
 </form>
           <!--<a id="page-3-more" href="#">More</a>-->
         </div>
 
         <h1 id="page-3-search" >Global</h1>
-        <div class="img-artist">
+        <div id="display-lowfront-none"class="img-artist">
 
           <a href="#"> <img class="width-image" src="images/ed.JPG" alt="">
           <figcaption>Ed Sheeran</figcaption> </a>
@@ -135,11 +136,73 @@ Music is your description of you, never change that.
 
             </div>
 
+            <!---Search--->
+
+            <div class="avril-search" id="avril-search-scr">
+                <h1 id="search-avril-header"></h1>
+                <a id="link-to-site" href=""> <img id="lavigne-img-search" src="" alt=""> </a>
+                <h1 id="search-avril-header"></h1>
+            </div>
+
             <p id="footer-txt">Music.org</p>
+
         </div>
         </div>
     </div>
-</div>
 
+
+</div>
   </body>
+
+  <script>
+  var boxInp = document.getElementById("artistInp");
+  var avrilLetter = ["av","avr","avri","avril"];
+  var arianaLetter = ["ar","ari","aria","arian","ariana"];
+  var juiceLetter = ["ju","jui","juic","juice"];
+  var footer = document.getElementById("display-lowfront-none")
+  var page3 = document.getElementById("footer-display");
+  var globalDis = document.getElementById("page-3-search");
+  var avrilSearch = document.getElementById("avril-search-scr");
+  var headerChange = document.getElementById("search-avril-header");
+  var imageChange = document.getElementById("lavigne-img-search");
+  var linkToSite = document.getElementById("link-to-site");
+
+    function searchArtist() {
+
+          for (var i = 0; i < avrilLetter.length; i++) {
+            if (boxInp.value == avrilLetter[i]) {
+              footer.style.display="none";
+              page3.style.height = "1000px";
+              globalDis.style.display = "none";
+              headerChange.innerHTML = "Avril Lavigne"
+              imageChange.src="images/small-phone-front.png"
+              avrilSearch.style.display = "block";
+              linkToSite.href="lavigne.html";
+            }
+
+            if (boxInp.value == juiceLetter[i]) {
+              footer.style.display="none";
+              page3.style.height = "1000px";
+              globalDis.style.display = "none";
+              headerChange.innerHTML = "Juice WRLD"
+              imageChange.src="images/search-jjuicewrld.jpg"
+              avrilSearch.style.display = "block";
+            }
+          }
+
+          for (var i = 0; i < arianaLetter.length; i++) {
+            if (boxInp.value == arianaLetter[i]) {
+              footer.style.display="none";
+              page3.style.height = "1000px";
+              globalDis.style.display = "none";
+              headerChange.innerHTML = "Ariana Grande"
+              imageChange.src="images/phone-ariana.png"
+              avrilSearch.style.display = "block";
+              linkToSite.href="ariana.html"
+            }
+          }
+
+
+    }
+  </script>
 </html>
